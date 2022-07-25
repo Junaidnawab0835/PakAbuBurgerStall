@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingStart="@dimen/_10ssp"
+                android:text="Menu"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10ssp"
+                android:orientation="horizontal"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_layout" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Discount 5% Applied"
+                android:id="@+id/discount_txt"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:fontFamily="@font/gilroy_bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:text="Total Bill:"
+             android:id="@+id/total_bill_txt"
+             android:layout_margin="10dp"
+             android:textColor="@color/black"
+             android:textSize="@dimen/_17ssp"
+             android:fontFamily="@font/gilroy_bold"
+             android:layout_height="wrap_content">
+
+         </TextView>
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="match_parent"
+                android:text="0.0"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/gilroy_bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/back_rounded"
+                android:backgroundTint="#f5aa42"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_19ssp"></TextView>
+
+            <TextView
+                android:id="@+id/hsitory_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/back_rounded"
+                android:backgroundTint="#f5aa42"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="History"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_19ssp"></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

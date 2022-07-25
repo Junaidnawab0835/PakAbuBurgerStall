@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="@dimen/_100ssp"
+            android:layout_margin="@dimen/_10ssp"
+            app:cardCornerRadius="@dimen/_100ssp"
+            app:cardElevation="@dimen/_5ssp">
+
+            <ImageView
+                android:id="@+id/img_dish"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/burger"
+                android:layout_height="match_parent" />
+
+
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_dish_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Name"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:fontFamily="@font/gilroy_light"
+                android:paddingStart="@dimen/_10ssp"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:id="@+id/price_txt"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:fontFamily="@font/gilroy_light"
+            android:paddingStart="@dimen/_10ssp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMinus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="-"
+
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="#535b6d"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPlus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="+"
+
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="#535b6d"
+                android:background="@drawable/back_rounded"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
